@@ -1,63 +1,115 @@
+// IntermediateAPI Program.cs
+using System.Text;
+using JwtHelper;
+using JwtHelper.Contracts;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Swagger/OpenAPI servisini ekliyoruz
+// JWT settings from appsettings.json
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+
+// Add services to the container
+builder.Services.AddControllers();
+
+// Add Authorization services
+builder.Services.AddAuthorization();
+
+// Register the ITokenService implementation
+builder.Services.AddSingleton<ITokenService, TokenService>();
+
+// Add Swagger services
 builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen(options =>
-// {
-//     options.SwaggerDoc("v1", new OpenApiInfo
-//     {
-//         Title = "Advanced API",
-//         Version = "v1",
-//         Description = "Advanced level API with WeatherForecast",
-//         Contact = new OpenApiContact
-//         {
-//             Name = "Volkan Koçak",
-//             Email = "your-email@example.com",
-//             Url = new Uri("https://github.com/your-github")
-//         }
-//     });
-// });
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Intermediate API",
+        Version = "v1",
+        Description = "Intermediate level JWT API with role-based authorization and refresh tokens",
+        Contact = new OpenApiContact
+        {
+            Name = "Volkan Koçak",
+            Email = "your-email@example.com",
+            Url = new Uri("https://github.com/your-github")
+        }
+    });
+
+    // Add JWT support in Swagger
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Enter 'Bearer' followed by a space and your token in the text input below.\r\n\r\nExample: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
+
+// JWT authentication setup
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtSettings["Issuer"],
+            ValidAudience = jwtSettings["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]))
+        };
+
+        // Logging for debugging authentication issues
+        options.Events = new JwtBearerEvents
+        {
+            OnAuthenticationFailed = context =>
+            {
+                Console.WriteLine($"Authentication failed: {context.Exception.Message}");
+                return Task.CompletedTask;
+            },
+            OnTokenValidated = context =>
+            {
+                Console.WriteLine("Token validated successfully.");
+                return Task.CompletedTask;
+            }
+        };
+    });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI(options =>
-//     {
-//         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Advanced API v1");
-//     });
-// }
-
-app.UseHttpsRedirection();
-
-var summaries = new[]
+if (app.Environment.IsDevelopment())
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
     {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi(); // OpenAPI metadata için gerekli
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Intermediate API v1");
+    });
+}
+
+// Configure the HTTP request pipeline
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

@@ -1,0 +1,6 @@
+@IntermediateAPI_HostAddress = http://localhost:5031
+
+GET {{IntermediateAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

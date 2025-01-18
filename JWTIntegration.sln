@@ -4,6 +4,66 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F5D0E7E3-B614-4F54-9669-00E4C114AA5E}"
+	ProjectSection(SolutionItems) = preProject
+		src\ProfessionalAPI\obj\ProfessionalAPI.csproj.nuget.dgspec.json = src\ProfessionalAPI\obj\ProfessionalAPI.csproj.nuget.dgspec.json
+		src\ProfessionalAPI\obj\ProfessionalAPI.csproj.nuget.g.props = src\ProfessionalAPI\obj\ProfessionalAPI.csproj.nuget.g.props
+		src\ProfessionalAPI\obj\ProfessionalAPI.csproj.nuget.g.targets = src\ProfessionalAPI\obj\ProfessionalAPI.csproj.nuget.g.targets
+		src\ProfessionalAPI\obj\rider.project.restore.info = src\ProfessionalAPI\obj\rider.project.restore.info
+		src\ProfessionalAPI\obj\project.nuget.cache = src\ProfessionalAPI\obj\project.nuget.cache
+		src\ProfessionalAPI\obj\rider.project.model.nuget.info = src\ProfessionalAPI\obj\rider.project.model.nuget.info
+		src\ProfessionalAPI\obj\project.packagespec.json = src\ProfessionalAPI\obj\project.packagespec.json
+		src\ProfessionalAPI\obj\project.assets.json = src\ProfessionalAPI\obj\project.assets.json
+		src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ProfessionalAPI.props = src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ProfessionalAPI.props
+		src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ProfessionalAPI.props = src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ProfessionalAPI.props
+		src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.ProfessionalAPI.props = src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.ProfessionalAPI.props
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.csproj.AssemblyReference.cache = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.csproj.AssemblyReference.cache
+		src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets.build.json = src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets.build.json
+		src\ProfessionalAPI\obj\Debug\net9.0\ref\ProfessionalAPI.dll = src\ProfessionalAPI\obj\Debug\net9.0\ref\ProfessionalAPI.dll
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.GlobalUsings.g.cs = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.GlobalUsings.g.cs
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.assets.cache = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.assets.cache
+		src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json = src\ProfessionalAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+		src\ProfessionalAPI\obj\Debug\net9.0\Professi.E24F030D.Up2Date = src\ProfessionalAPI\obj\Debug\net9.0\Professi.E24F030D.Up2Date
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.GeneratedMSBuildEditorConfig.editorconfig = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.GeneratedMSBuildEditorConfig.editorconfig
+		src\ProfessionalAPI\obj\Debug\net9.0\refint\ProfessionalAPI.dll = src\ProfessionalAPI\obj\Debug\net9.0\refint\ProfessionalAPI.dll
+		src\ProfessionalAPI\obj\Debug\net9.0\apphost = src\ProfessionalAPI\obj\Debug\net9.0\apphost
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.MvcApplicationPartsAssemblyInfo.cache = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.MvcApplicationPartsAssemblyInfo.cache
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.AssemblyInfo.cs = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.AssemblyInfo.cs
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.sourcelink.json = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.sourcelink.json
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.AssemblyInfoInputs.cache = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.AssemblyInfoInputs.cache
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.MvcApplicationPartsAssemblyInfo.cs = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.MvcApplicationPartsAssemblyInfo.cs
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.dll = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.dll
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.genruntimeconfig.cache = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.genruntimeconfig.cache
+		src\ProfessionalAPI\obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs = src\ProfessionalAPI\obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.pdb = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.pdb
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.csproj.CoreCompileInputs.cache = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.csproj.CoreCompileInputs.cache
+		src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.csproj.FileListAbsolute.txt = src\ProfessionalAPI\obj\Debug\net9.0\ProfessionalAPI.csproj.FileListAbsolute.txt
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\Common.dll = src\ProfessionalAPI\bin\Debug\net9.0\Common.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\JwtHelper.pdb = src\ProfessionalAPI\bin\Debug\net9.0\JwtHelper.pdb
+		src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.runtimeconfig.json = src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.runtimeconfig.json
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\JwtHelper.dll = src\ProfessionalAPI\bin\Debug\net9.0\JwtHelper.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\Common.pdb = src\ProfessionalAPI\bin\Debug\net9.0\Common.pdb
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\appsettings.json = src\ProfessionalAPI\bin\Debug\net9.0\appsettings.json
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.dll = src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.staticwebassets.endpoints.json = src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.staticwebassets.endpoints.json
+		src\ProfessionalAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll = src\ProfessionalAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.pdb = src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.pdb
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\appsettings.Development.json = src\ProfessionalAPI\bin\Debug\net9.0\appsettings.Development.json
+		src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll = src\ProfessionalAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+		src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.deps.json = src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI.deps.json
+		src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI = src\ProfessionalAPI\bin\Debug\net9.0\ProfessionalAPI
+		src\ProfessionalAPI\appsettings.json = src\ProfessionalAPI\appsettings.json
+		src\ProfessionalAPI\Properties\launchSettings.json = src\ProfessionalAPI\Properties\launchSettings.json
+		src\ProfessionalAPI\ProfessionalAPI.csproj = src\ProfessionalAPI\ProfessionalAPI.csproj
+		src\ProfessionalAPI\appsettings.Development.json = src\ProfessionalAPI\appsettings.Development.json
+		src\ProfessionalAPI\Program.cs = src\ProfessionalAPI\Program.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeginnerAPI", "src\BeginnerAPI\BeginnerAPI.csproj", "{C1071EAC-A0EA-458F-99B8-D9056AB6D98C}"
 EndProject
@@ -18,6 +78,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "libs\Common\Common.csproj", "{B5B4B7E0-8E0E-49C9-8117-030A02024150}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtHelper", "libs\JwtHelper\JwtHelper.csproj", "{C5D79232-39F4-4098-B5D5-093027D2D200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeginnerAPI.Tests", "BeginnerAPI.Tests\BeginnerAPI.Tests.csproj", "{24C2CD37-946C-473B-B63A-89051DDB5AA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +114,10 @@ Global
 		{C5D79232-39F4-4098-B5D5-093027D2D200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D79232-39F4-4098-B5D5-093027D2D200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D79232-39F4-4098-B5D5-093027D2D200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C2CD37-946C-473B-B63A-89051DDB5AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C2CD37-946C-473B-B63A-89051DDB5AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C2CD37-946C-473B-B63A-89051DDB5AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C2CD37-946C-473B-B63A-89051DDB5AA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C1071EAC-A0EA-458F-99B8-D9056AB6D98C} = {F5D0E7E3-B614-4F54-9669-00E4C114AA5E}
